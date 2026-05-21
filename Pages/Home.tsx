@@ -459,7 +459,7 @@ export default function Home() {
     left-1/2
     -translate-x-1/2
 
-    sm:left-4
+    sm:left-2
     sm:translate-x-0
 
     z-20
@@ -468,7 +468,7 @@ export default function Home() {
     max-w-[260px]
 
     px-4
-    sm:px-5
+    sm:px-4
 
     py-3
     sm:py-4

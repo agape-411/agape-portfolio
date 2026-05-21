@@ -26,15 +26,23 @@ export const metadata: Metadata = {
     "Frontend developer specializing in React, Next.js, modern UI systems, and high-performance web applications.",
 
   openGraph: {
-    title: "Agape Korrok | Frontend Developer",
-    description:
-      "Frontend developer specializing in React and Next.js.",
-    images: ["/og-image.png"],
-  },
+  title: "Agape Korrok | Frontend Developer",
+  description: "Frontend developer specializing in React and Next.js.",
+  url: "https://agape-portfolio.vercel.app",
+  siteName: "Agape Portfolio",
+  images: [
+    {
+      url: "https://agape-portfolio.vercel.app/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  ],
+  type: "website",
+},
 
   twitter: {
     card: "summary_large_image",
-    images: ["/og-image.png"],
+    images: ["https://agape-portfolio.vercel.app/og-image.png"],
   },
 };
 
