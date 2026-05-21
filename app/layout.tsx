@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   description: "Frontend developer specializing in React and Next.js.",
   url: "https://agape-portfolio.vercel.app",
   siteName: "Agape Portfolio",
+  type: "website",
   images: [
     {
-      url: "https://agape-portfolio.vercel.app/og-image.png",
+      url: "https://agape-portfolio.vercel.app/og-image.jpg",
       width: 1200,
       height: 630,
     },
   ],
-  type: "website",
 },
 
   twitter: {
