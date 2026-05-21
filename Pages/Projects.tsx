@@ -10,14 +10,14 @@ const projects = [
     desc: "Modern corporate website engineered with premium UI/UX, responsive layouts, smooth animations, and scalable frontend architecture tailored for a technology-focused brand.",
     tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
     image: "/images/p1.png",
-    link: "https://garveylabs.com",
+    link: "https://www.garveylabs.com/",
   },
   {
     title: "Lascenti",
     desc: "High-performance digital platform designed for a modern startup with clean visual hierarchy, responsive user flows, and polished frontend interactions.",
     tags: ["React", "Next.js", "UI/UX", "Responsive Design"],
     image: "/images/p4.png",
-    link: "https://lascenti.io",
+    link: "https://www.lascenti.co",
   },
   {
     title: "E-Commerce Platform",

@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Send } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
+  "Home",
   "About",
   "Projects",
   "Skills",
@@ -39,11 +41,11 @@ export default function Header() {
         pt-4
       "
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-5 md:px-7">
         {/* FLOATING NAVBAR */}
         <div
           className="
-            h-[84px]
+            h-[80px]
 
             rounded-[28px]
 
@@ -59,49 +61,33 @@ export default function Header() {
             items-center
             justify-between
 
-            px-6
-            md:px-10
+            px-4
+            md:px-8
           "
         >
           {/* LOGO */}
-          <button
-            onClick={() => scrollTo("hero")}
-            className="flex items-center gap-3"
-          >
-            <div
-              className="
-                w-11
-                h-11
-
-                rounded-xl
-
-                bg-gradient-to-br
-                from-[#14B8A6]
-                to-[#0F766E]
-
-                flex
-                items-center
-                justify-center
-
-                text-white
-                font-black
-                text-xl
-              "
-            >
-              A
-            </div>
-
-            <span
-              className="
-                text-xl
-                font-bold
-                tracking-tight
-                text-slate-900
-              "
-            >
-              AGAPE
-            </span>
-          </button>
+<button
+  onClick={() => scrollTo("hero")}
+  className="
+    flex
+    items-center
+    shrink-0
+  "
+>
+  <Image
+    src="/images/logo.png"
+    alt="Agape Logo"
+    width={180}
+    height={60}
+    priority
+    className="
+      h-14
+      md:h-16
+      w-auto
+      object-contain
+    "
+  />
+</button>
 
           {/* DESKTOP NAV */}
           <nav
@@ -109,7 +95,7 @@ export default function Header() {
               hidden
               lg:flex
               items-center
-              gap-10
+              gap-8
             "
           >
             {navLinks.map((link, index) => (
@@ -266,7 +252,7 @@ export default function Header() {
                       text-left
 
                       px-4
-                      py-4
+                      py-3
 
                       rounded-2xl
 

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
+import {Analytics} from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,12 +15,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Agape Korrok | Frontend Developer",
-  description:
-    "Frontend Developer specializing in React and Next.js",
 
-  
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://agape-portfolio.vercel.app"),
+
+  title: "Agape Korrok | Frontend Developer",
+
+  description:
+    "Frontend developer specializing in React, Next.js, modern UI systems, and high-performance web applications.",
+
+  openGraph: {
+    title: "Agape Korrok | Frontend Developer",
+    description:
+      "Frontend developer specializing in React and Next.js.",
+    images: ["/og-image.png"],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +52,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics/>
       </body>
     </html>
   );

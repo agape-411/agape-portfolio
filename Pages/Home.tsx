@@ -10,10 +10,10 @@ const scrollTo = (id: string) => {
   });
 };
 
-export default function Hero() {
+export default function Home() {
   return (
     <section
-      id="hero"
+      id="home"
       className="
         relative
         overflow-hidden
@@ -451,41 +451,47 @@ export default function Hero() {
               </div>
 
               {/* FLOATING CARD */}
-              <div
-                className="
-                  absolute
+<div
+  className="
+    absolute
+    bottom-3
 
-                  bottom-3
-                  left-1/2
-                  -translate-x-1/2
+    left-1/2
+    -translate-x-1/2
 
-                  sm:left-4
-                  sm:translate-x-0
+    sm:left-4
+    sm:translate-x-0
 
-                  z-20
+    z-20
 
-                  px-5
-                  py-4
+    w-[90%]
+    max-w-[260px]
 
-                  rounded-2xl
+    px-4
+    sm:px-5
 
-                  border
-                  border-white/60
+    py-3
+    sm:py-4
 
-                  bg-white/80
-                  backdrop-blur-xl
+    rounded-2xl
 
-                  shadow-xl
-                "
-              >
-                <p className="text-sm text-slate-800 font-medium">
-                  Web Developer
-                </p>
+    border
+    border-white/60
 
-                <h4 className="text-lg font-bold text-slate-900">
-                  React • Next.js
-                </h4>
-              </div>
+    bg-white/80
+    backdrop-blur-xl
+
+    shadow-xl
+  "
+>
+  <p className="text-xs sm:text-sm text-slate-800 font-medium">
+    Web Developer
+  </p>
+
+  <h4 className="text-base sm:text-lg font-bold text-slate-900">
+    React • Next.js
+  </h4>
+</div>
             </div>
           </motion.div>
         </div>

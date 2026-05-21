@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -70,6 +71,196 @@ const reviews = [
     logo: "/images/pp.png",
   },
 ];
+
+function ReviewCard({
+  review,
+  index,
+}: {
+  review: (typeof reviews)[number];
+  index: number;
+}) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: index * 0.08,
+        duration: 0.6,
+      }}
+      viewport={{ once: true }}
+      className="
+        group
+        relative
+        h-full
+        min-h-[500px]
+        rounded-[30px]
+        border border-white/15
+        bg-white/12
+        backdrop-blur-2xl
+        p-5 sm:p-6
+        shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+        hover:-translate-y-1
+        transition-all duration-500
+        flex flex-col
+        overflow-hidden
+      "
+    >
+      {/* CARD GLOW */}
+      <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+      {/* TOP ROW */}
+      <div className="flex items-start justify-between gap-4 mb-8 relative z-10">
+
+        <div className="flex flex-col gap-4">
+
+          <div className="flex gap-1">
+            {Array.from({
+              length: review.rating,
+            }).map((_, j) => (
+              <Star
+                key={j}
+                className="w-4 h-4 text-yellow-300 fill-yellow-300"
+              />
+            ))}
+          </div>
+
+          <div
+            className="
+              inline-flex
+              items-center
+              gap-2
+              px-3
+              py-2
+              rounded-xl
+              bg-white/10
+              border border-white/10
+              w-fit
+            "
+          >
+            <Image
+              src={review.logo}
+              alt={review.platform}
+              width={28}
+              height={28}
+              className="object-contain shrink-0"
+            />
+
+            <span className="text-xs text-white/85 font-medium">
+              {review.platform}
+            </span>
+          </div>
+
+        </div>
+
+        <div
+          className="
+            shrink-0
+            w-14
+            h-14
+            rounded-2xl
+            bg-white/10
+            flex
+            items-center
+            justify-center
+          "
+        >
+          <Quote className="w-7 h-7 text-white/80" />
+        </div>
+
+      </div>
+
+      {/* REVIEW TEXT */}
+      <div className="relative mb-6">
+
+        <p
+          className={`
+            text-base
+            sm:text-[17px]
+            leading-8
+            text-[#052B2F]
+            transition-all
+            duration-300
+            ${expanded ? "" : "line-clamp-6"}
+          `}
+        >
+          “{review.text}”
+        </p>
+
+        {!expanded && (
+          <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[#6fe4d6]/40 to-transparent pointer-events-none" />
+        )}
+
+      </div>
+
+      {/* READ MORE */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="
+          inline-flex
+          items-center
+          gap-2
+          text-sm
+          font-semibold
+          text-[#05363B]
+          hover:text-white
+          transition-colors
+          mb-5
+        "
+      >
+        {expanded ? "Show Less" : "Read Full Review"}
+
+        <ExternalLink
+          className={`
+            w-4 h-4
+            transition-transform
+            duration-300
+            ${expanded ? "rotate-180" : ""}
+          `}
+        />
+      </button>
+
+      {/* FOOTER */}
+      <div className="mt-auto">
+
+        <div className="flex items-center gap-4">
+
+          <Image
+            src={review.image}
+            alt={review.name}
+            width={56}
+            height={56}
+            className="
+              w-14
+              h-14
+              rounded-full
+              border-2
+              border-white/20
+              object-cover
+              shrink-0
+            "
+          />
+
+          <div>
+
+            <h4 className="text-lg font-bold text-[#052B2F]">
+              {review.name}
+            </h4>
+
+            <p className="text-[#355659] text-sm sm:text-base">
+              {review.role}
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </motion.div>
+  );
+}
 
 export default function Reviews() {
   return (
@@ -230,180 +421,11 @@ export default function Reviews() {
 
           {reviews.map((review, i) => (
             <SwiperSlide key={i} className="h-auto">
-
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: i * 0.08,
-                  duration: 0.6,
-                }}
-                viewport={{ once: true }}
-                className="
-                  group
-                  relative
-                  h-full
-                  min-h-[500px]
-                  rounded-[30px]
-                  border border-white/15
-                  bg-white/12
-                  backdrop-blur-2xl
-                  p-5 sm:p-6
-                  shadow-[0_20px_60px_rgba(0,0,0,0.12)]
-                  hover:-translate-y-1
-                  transition-all duration-500
-                  flex flex-col
-                  overflow-hidden
-                "
-              >
-                {/* CARD GLOW */}
-                <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                {/* TOP ROW */}
-                <div className="flex items-start justify-between gap-4 mb-8 relative z-10">
-
-                  {/* LEFT */}
-                  <div className="flex flex-col gap-4">
-
-                    {/* STARS */}
-                    <div className="flex gap-1">
-                      {Array.from({
-                        length: review.rating,
-                      }).map((_, j) => (
-                        <Star
-                          key={j}
-                          className="w-4 h-4 text-yellow-300 fill-yellow-300"
-                        />
-                      ))}
-                    </div>
-
-                    {/* PLATFORM BADGE */}
-                    <div
-                      className="
-                        inline-flex
-                        items-center
-                        gap-2
-                        px-3
-                        py-2
-                        rounded-xl
-                        bg-white/10
-                        border border-white/10
-                        w-fit
-                      "
-                    >
-                      <div className="relative w-4 h-4 shrink-0">
-                        <Image
-  src={review.logo}
-  alt={review.platform}
-  width={28}
-  height={28}
-  className="object-contain shrink-0"
-/>
-                      </div>
-
-                      <span className="text-xs text-white/85 font-medium">
-                        {review.platform}
-                      </span>
-                    </div>
-
-                  </div>
-
-                  {/* QUOTE ICON */}
-                  <div
-                    className="
-                      shrink-0
-                      w-14
-                      h-14
-                      rounded-2xl
-                      bg-white/10
-                      flex
-                      items-center
-                      justify-center
-                    "
-                  >
-                    <Quote className="w-7 h-7 text-white/80" />
-                  </div>
-
-                </div>
-
-                {/* REVIEW TEXT */}
-                <div className="relative mb-6">
-
-                  <p
-                    className="
-                      text-base
-                      sm:text-[17px]
-                      leading-8
-                      text-[#052B2F]
-                      line-clamp-6
-                    "
-                  >
-                    “{review.text}”
-                  </p>
-
-                  {/* FADE */}
-                  <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[#6fe4d6]/40 to-transparent pointer-events-none" />
-
-                </div>
-
-                {/* READ MORE */}
-                <button
-                  className="
-                    inline-flex
-                    items-center
-                    gap-2
-                    text-sm
-                    font-semibold
-                    text-[#05363B]
-                    hover:text-white
-                    transition-colors
-                    mb-5
-                  "
-                >
-                  Read Full Review
-                  <ExternalLink className="w-4 h-4" />
-                </button>
-
-                {/* FOOTER */}
-                <div className="mt-auto">
-
-                  <div className="flex items-center gap-4">
-
-                    <Image
-  src={review.image}
-  alt={review.name}
-  width={56}
-  height={56}
-  className="
-    w-14
-    h-14
-    rounded-full
-    border-2
-    border-white/20
-    object-cover
-    shrink-0
-  "
-/>
-
-                    <div>
-
-                      <h4 className="text-lg font-bold text-[#052B2F]">
-                        {review.name}
-                      </h4>
-
-                      <p className="text-[#355659] text-sm sm:text-base">
-                        {review.role}
-                      </p>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </motion.div>
-
-            </SwiperSlide>
+  <ReviewCard
+    review={review}
+    index={i}
+  />
+</SwiperSlide>
           ))}
 
         </Swiper>
