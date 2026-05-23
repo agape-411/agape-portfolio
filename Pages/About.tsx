@@ -115,7 +115,7 @@ export default function About() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-10">
 
         {/* HEADER */}
         <motion.div
@@ -170,7 +170,7 @@ export default function About() {
             className="
               text-4xl
               sm:text-5xl
-              lg:text-6xl
+              lg:text-[3.75rem]
 
               font-black
               leading-[0.95]
@@ -195,8 +195,8 @@ export default function About() {
             grid
             lg:grid-cols-2
 
-            gap-10
-            lg:gap-16
+            gap-8
+            lg:gap-12
 
             items-start
           "
@@ -220,13 +220,14 @@ export default function About() {
           >
             <p
               className="
-                text-lg
-                md:text-xl
+              max-w-[580px]
+              mx-auto
+              lg:mx-0
 
-                leading-relaxed
-
-                text-slate-700
-              "
+              text-lg
+              leading-relaxed
+              text-slate-700
+"
             >
               I specialize in crafting premium digital experiences with
               modern frontend technologies, intuitive interfaces, and
@@ -270,7 +271,7 @@ export default function About() {
                     bg-white/80
                     backdrop-blur-xl
 
-                    p-8
+                    p-6 lg:p-7
 
                     shadow-[0_10px_40px_rgba(15,23,42,0.06)]
 

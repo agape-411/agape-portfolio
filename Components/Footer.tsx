@@ -20,12 +20,12 @@ export default function Footer() {
       {/* GLOW */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-cyan-400/10 blur-[140px] rounded-full" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-7 sm:py-8">
 
         <div className="flex flex-col items-center justify-center text-center">
 
           {/* BRAND */}
-          <h2 className="text-3xl sm:text-4xl font-black tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
 
             <span className="bg-[linear-gradient(135deg,#ffffff_0%,#B6FFF7_40%,#6EE7D8_100%)] bg-clip-text text-transparent">
               Agape
@@ -34,7 +34,7 @@ export default function Footer() {
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="mt-4 max-w-2xl text-sm sm:text-base leading-relaxed text-white/65">
+          <p className="mt-3 max-w-xl text-sm sm:text-base leading-relaxed text-white/65">
 
             Designing and developing premium digital experiences with
             scalable architecture, clean UI systems,
@@ -51,10 +51,11 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-12 h-12 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 hover:-translate-y-1 transition-all duration-300"
+                className="group w-10 h-10
+rounded-xl border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center text-white/70 hover:text-white hover:bg-white/10 hover:-translate-y-1 transition-all duration-300"
               >
 
-                <Icon size={18} />
+                <Icon size={16} />
 
               </a>
             ))}
@@ -62,7 +63,7 @@ export default function Footer() {
           </div>
 
           {/* DIVIDER */}
-          <div className="w-full h-px bg-white/10 my-8 sm:my-10" />
+          <div className="w-full h-px bg-white/10 my-6 sm:my-8" />
 
           {/* BOTTOM */}
           <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -80,7 +81,7 @@ export default function Footer() {
                   behavior: "smooth",
                 })
               }
-              className="group inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-[13px] text-white/60 hover:text-white transition-colors duration-300"
             >
 
               Back to Top

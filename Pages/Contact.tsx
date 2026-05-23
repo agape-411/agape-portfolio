@@ -60,7 +60,7 @@ export default function Contact() {
 
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
 
         <div
           className="
@@ -76,7 +76,8 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2">
 
             {/* LEFT PANEL */}
-            <div className="relative p-6 sm:p-10 lg:p-14">
+            <div className="relative p-8
+lg:p-10">
 
               {/* INNER GLOW */}
               <div className="absolute top-0 left-0 w-[180px] sm:w-[250px] h-[180px] sm:h-[250px] bg-white/10 blur-[80px] sm:blur-[100px] rounded-full" />
@@ -90,7 +91,9 @@ export default function Contact() {
               >
 
                 {/* HEADING */}
-                <h2 className="text-[2.6rem] sm:text-5xl lg:text-6xl font-black leading-[0.95] tracking-tight text-[#052B2F]">
+                <h2 className="text-4xl
+sm:text-5xl
+lg:text-[3.8rem] font-black leading-[0.95] tracking-tight text-[#052B2F]">
 
                   Let’s Build
 

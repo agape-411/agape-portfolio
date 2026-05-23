@@ -136,18 +136,18 @@ export default function Home() {
       <div
         className="
           relative z-10
-          max-w-[1400px] mx-auto
+          max-w-7xl mx-auto
           px-6 md:px-10
-          pt-[110px]
-          md:pt-[100px]
-          pb-16
+          pt-[90px]
+          md:pt-[95px]
+          pb-10
         "
       >
         <div
           className="
             grid
             lg:grid-cols-2
-            gap-14 lg:gap-20
+            gap-10 lg:gap-13
             items-center
           "
         >
@@ -205,8 +205,8 @@ export default function Home() {
                 text-3xl
                 sm:text-4xl
                 md:text-5xl
-                lg:text-[5rem]
-                xl:text-[5.6rem]
+                lg:text-[4rem]
+                xl:text-[4.4rem]
 
                 font-black
                 leading-[0.92]
@@ -352,9 +352,10 @@ export default function Home() {
                 w-full
                 max-w-[560px]
 
-                h-[380px]
-                sm:h-[500px]
-                lg:h-[620px]
+               h-[380px]
+sm:h-[500px]
+lg:h-[560px]
+xl:h-[600px]
               "
             >
               {/* TEAL ATMOSPHERIC GLOW */}

@@ -100,11 +100,11 @@ export default function Projects() {
   className="
     relative
     w-full
-    h-[260px]
-    sm:h-[320px]
-    md:h-[380px]
-    lg:h-[420px]
-    xl:h-[460px]
+    h-[240px]
+    sm:h-[280px]
+    md:h-[320px]
+    lg:h-[340px]
+    xl:h-[380px]
     overflow-hidden
     bg-[#071E22]
     flex
@@ -135,7 +135,7 @@ export default function Projects() {
               {/* CONTENT */}
               <div className="p-5 sm:p-6 lg:p-7">
                 <div className="flex items-start justify-between gap-4 mb-5">
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-[#052B2F] leading-tight">
+                  <h3 className="text-2xl sm:text-3xl lg:text-[2rem] font-black tracking-tight text-[#052B2F] leading-tight">
                     {project.title}
                   </h3>
 

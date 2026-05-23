@@ -41,13 +41,13 @@ export default function Header() {
         pt-4
       "
     >
-      <div className="max-w-7xl mx-auto px-3 sm:px-5 md:px-7">
+      <div className="max-w-6xl mx-auto px-3 sm:px-5 md:px-7">
         {/* FLOATING NAVBAR */}
         <div
           className="
-            h-[80px]
+            h-[72px]
 
-            rounded-[28px]
+            rounded-[24px]
 
             border
             border-white/70
@@ -65,37 +65,58 @@ export default function Header() {
             md:px-8
           "
         >
-          {/* LOGO */}
+          {/* LOGO + NAME */}
 <button
-  onClick={() => scrollTo("hero")}
+  onClick={() => scrollTo("home")}
   className="
     flex
     items-center
+    gap-2
+    sm:gap-3
     shrink-0
+    min-w-0
   "
 >
   <Image
     src="/images/logo.png"
     alt="Agape Logo"
-    width={180}
-    height={60}
+    width={48}
+    height={48}
     priority
     className="
-      h-14
-      md:h-16
-      w-auto
+      w-10
+      h-10
+      sm:w-11
+      sm:h-11
+      md:w-12
+      md:h-12
       object-contain
+      shrink-0
     "
   />
-</button>
 
+  <span
+  className="
+    text-base
+    sm:text-lg
+    md:text-xl
+    lg:text-2xl
+    font-black
+    tracking-tight
+    whitespace-nowrap
+  "
+>
+  Agape <span className="text-[#0F9A94]">Korrok</span>
+</span>
+</button>
           {/* DESKTOP NAV */}
           <nav
             className="
               hidden
               lg:flex
               items-center
-              gap-8
+              gap-6
+xl:gap-7
             "
           >
             {navLinks.map((link, index) => (
@@ -104,7 +125,7 @@ export default function Header() {
                 onClick={() => scrollTo(link)}
                 className={`
                   relative
-                  text-[19px]
+                  text-[17px]
                   font-semibold
                   transition-colors
                   duration-300
@@ -150,15 +171,15 @@ export default function Header() {
                 items-center
                 gap-2
 
-                px-6
-                py-3
+                px-5
+                py-2.5
 
                 rounded-2xl
 
                 bg-[#0F9A94]
 
                 text-white
-                font-medium
+                font-semibold
 
                 shadow-lg
                 shadow-teal-500/20
@@ -220,7 +241,7 @@ export default function Header() {
 
               mt-3
 
-              max-w-7xl
+              max-w-6xl
               mx-auto
 
               px-4
@@ -240,7 +261,7 @@ export default function Header() {
 
                 shadow-[0_20px_60px_rgba(15,23,42,0.10)]
 
-                p-5
+                p-4
               "
             >
               <div className="flex flex-col gap-2">

@@ -94,7 +94,7 @@ function ReviewCard({
         group
         relative
         h-full
-        min-h-[500px]
+        min-h-[420px]
         rounded-[30px]
         border border-white/15
         bg-white/12
@@ -284,7 +284,7 @@ export default function Reviews() {
 
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-10">
 
         {/* HEADER */}
         <motion.div
@@ -315,9 +315,9 @@ export default function Reviews() {
 
           <h2
             className="
-              text-[2.4rem]
-              sm:text-5xl
-              lg:text-6xl
+              text-[2.2rem]
+              sm:text-4xl
+              lg:text-[3.5rem]
               font-black
               tracking-tight
               text-[#052B2F]

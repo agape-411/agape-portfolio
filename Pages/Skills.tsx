@@ -79,7 +79,7 @@ export default function Skills() {
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#052B2F]">
+          <h2 className="ttext-4xl sm:text-5xl lg:text-[3.8rem] font-black tracking-tight text-[#052B2F]">
             Skills & Technologies
           </h2>
 
@@ -133,7 +133,7 @@ export default function Skills() {
                 </h3>
 
                 {/* SKILLS */}
-                <div className="mt-3 flex flex-wrap gap-3 justify-center">
+                <div className="mt-3 flex flex-wrap gap-6 justify-center">
 
                   {cat.skills.map((skill) => (
                     <span

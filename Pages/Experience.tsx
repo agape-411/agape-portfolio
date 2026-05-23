@@ -34,7 +34,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative overflow-hidden bg-white py-14 md:py-19"
+      className="relative overflow-hidden bg-white py-11 md:py-15"
     >
 
       {/* BACKGROUND LIGHTING */}
@@ -46,7 +46,7 @@ export default function Experience() {
 
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-10">
 
         {/* HEADER */}
         <motion.div
@@ -74,7 +74,7 @@ export default function Experience() {
           {/* LINE */}
           <div className="absolute left-5 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#11A3A2] to-transparent" />
 
-          <div className="space-y-2">
+          <div className="space-y-4">
 
             {experiences.map((exp, i) => (
               <motion.div
@@ -105,7 +105,7 @@ export default function Experience() {
                   rounded-[30px]
                   border border-black/5
                   bg-[#F8FAFA]
-                  p-8
+                  p-6 lg:p-7
                   shadow-[0_10px_40px_rgba(0,0,0,0.05)]
                   hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
                   transition-all duration-500
@@ -115,7 +115,7 @@ export default function Experience() {
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 mb-3">
 
                     <div>
-                      <h3 className="text-2xl font-bold text-[#052B2F]">
+                      <h3 className="text-xl lg:text-[1.35rem] font-bold text-[#052B2F]">
                         {exp.role}
                       </h3>
 
@@ -156,7 +156,7 @@ export default function Experience() {
                   </div>
 
                   {/* DESCRIPTION */}
-                  <p className="text-lg leading-relaxed text-[#556466]">
+                  <p className="text-base lg:text-[17px] leading-relaxed text-[#556466]">
                     {exp.desc}
                   </p>
 
