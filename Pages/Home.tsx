@@ -350,12 +350,12 @@ export default function Home() {
                 relative
 
                 w-full
-                max-w-[560px]
+                max-w-[420px]
 
-               h-[350px]
-               sm:h-[470px]
-               lg:h-[530px]
-               xl:h-[550px]
+               h-[320px]
+               sm:h-[400px]
+               lg:h-[460px]
+               xl:h-[480px]
               "
             >
               {/* TEAL ATMOSPHERIC GLOW */}
@@ -366,8 +366,8 @@ export default function Home() {
 
     bg-[radial-gradient(circle_at_center,rgba(20,184,166,0.55),transparent_70%)]
 
-    blur-[120px]
-    scale-[1.65]
+    blur-[80px]
+    scale-[1.2]
   "
 />
 
@@ -376,18 +376,18 @@ export default function Home() {
     absolute
 
     top-1/2
-    right-[-60px]
+    right-[-20px]
 
     -translate-y-1/2
 
-    w-[520px]
-    h-[520px]
+    w-[320px]
+    h-[320px]
 
     rounded-full
 
     bg-[#14B8A6]/30
 
-    blur-[120px]
+    blur-[80px]
   "
 />
               {/* GLASS BACK PANEL */}
@@ -465,14 +465,10 @@ export default function Home() {
 
     z-20
 
-    w-[90%]
-    max-w-[260px]
+    w-fit
 
     px-4
-    sm:px-4
-
     py-3
-    sm:py-4
 
     rounded-2xl
 
@@ -485,11 +481,11 @@ export default function Home() {
     shadow-xl
   "
 >
-  <p className="text-xs sm:text-sm text-slate-800 font-medium">
+  <p className="text-xs sm:text-sm text-slate-800 font-medium whitespace-nowrap">
     Web Developer
   </p>
 
-  <h4 className="text-base sm:text-lg font-bold text-slate-900">
+  <h4 className="text-base sm:text-lg font-bold text-slate-900 whitespace-nowrap">
     React • Next.js
   </h4>
 </div>
