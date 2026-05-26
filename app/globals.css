@@ -1,72 +1,11 @@
 @import "tailwindcss";
 
 html {
-  font-size: 17px;
+  scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-[#0a0a0a] text-gray-300 text-[18px] md:text-base leading-relaxed;
+  @apply bg-[#0a0a0a] text-gray-300 leading-relaxed;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-/* ================= HEADINGS ================= */
-
-h1 {
-  @apply text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight;
-}
-
-h2 {
-  @apply text-3xl md:text-4xl font-semibold;
-}
-
-h3 {
-  @apply text-xl font-medium;
-}
-
-/* ================= TEXT CONTROL ================= */
-
-/* Remove forced paragraph color */
-p {
-  @apply text-base md:text-lg leading-relaxed;
-}
-
-/* ================= DARK SECTIONS ================= */
-
-.dark-section {
-  @apply bg-[#0a0a0a] text-white;
-}
-
-.dark-section p {
-  @apply text-gray-400;
-}
-
-/* ================= LIGHT SECTIONS ================= */
-
-.light-section {
-  @apply bg-[#f8fafc] text-gray-900;
-}
-
-.light-section p {
-  @apply text-gray-600;
-}
-
-/* ================= SOFT DARK ================= */
-
-.soft-dark {
-  @apply bg-[#111111] text-white;
-}
-
-.soft-dark p {
-  @apply text-gray-400;
-}
-
-/* ================= GRADIENT SECTION ================= */
-
-.gradient-section {
-  @apply bg-linear-to-br from-purple-500 via-indigo-500 to-purple-600 text-white;
-}
-
-.gradient-section p {
-  @apply text-white/80;
 }

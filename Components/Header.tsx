@@ -104,9 +104,10 @@ export default function Header() {
     font-black
     tracking-tight
     whitespace-nowrap
+    
   "
 >
-  Agape <span className="text-[#0F9A94]">Korrok</span>
+  Agape 
 </span>
 </button>
           {/* DESKTOP NAV */}
