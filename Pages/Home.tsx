@@ -181,7 +181,7 @@ export default function Home() {
 
                 shadow-sm
 
-                mb-6
+                mb-5
               "
             >
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -229,7 +229,7 @@ export default function Home() {
             {/* DESCRIPTION */}
             <p
               className="
-                mt-7
+                mt-5
 
                 max-w-2xl
                 mx-auto lg:mx-0
@@ -252,8 +252,8 @@ export default function Home() {
             {/* BUTTONS */}
             <div
               className="
-                mt-8
-                sm:mt-10
+                mt-5
+                sm:mt-9
 
                 flex
                 flex-col
@@ -341,7 +341,7 @@ export default function Home() {
               items-center
 
               w-full
-              mt-2 lg:mt-5
+              mt-2 lg:mt-3
             "
           >
             {/* IMAGE WRAPPER */}
@@ -352,10 +352,10 @@ export default function Home() {
                 w-full
                 max-w-[560px]
 
-               h-[380px]
-sm:h-[500px]
-lg:h-[560px]
-xl:h-[600px]
+               h-[350px]
+               sm:h-[470px]
+               lg:h-[530px]
+               xl:h-[550px]
               "
             >
               {/* TEAL ATMOSPHERIC GLOW */}
@@ -445,7 +445,7 @@ xl:h-[600px]
                   {Array.from({ length: 16 }).map((_, i) => (
                     <div
                       key={i}
-                      className="w-1.5 h-1.5 rounded-full bg-white"
+                      className="w-1.5 h-1.5 rounded-full bg-[#0F9A94]"
                     />
                   ))}
                 </div>

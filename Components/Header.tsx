@@ -266,7 +266,7 @@ xl:gap-7
                 p-4
               "
             >
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-2">
                 {navLinks.map((link) => (
                   <button
                     key={link}
@@ -275,7 +275,7 @@ xl:gap-7
                       text-left
 
                       px-4
-                      py-2
+                      py-3
 
                       rounded-2xl
 
