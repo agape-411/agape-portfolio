@@ -45,9 +45,9 @@ export default function Header() {
         {/* FLOATING NAVBAR */}
         <div
           className="
-            h-[72px]
+            h-18
 
-            rounded-[24px]
+            rounded-3xl
 
             border
             border-white/70
@@ -104,6 +104,7 @@ export default function Header() {
     font-black
     tracking-tight
     whitespace-nowrap
+    text-[#0F9A94]
     
   "
 >
@@ -145,9 +146,9 @@ xl:gap-7
                       absolute
                       left-1/2
                       -translate-x-1/2
-                      top-[34px]
+                      top-8.5
 
-                      h-[2px]
+                      h-0.5
                       w-6
 
                       rounded-full
@@ -265,7 +266,7 @@ xl:gap-7
                 p-4
               "
             >
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
                 {navLinks.map((link) => (
                   <button
                     key={link}
@@ -274,7 +275,7 @@ xl:gap-7
                       text-left
 
                       px-4
-                      py-3
+                      py-2
 
                       rounded-2xl
 
@@ -293,7 +294,7 @@ xl:gap-7
                 <button
                   onClick={() => scrollTo("contact")}
                   className="
-                    mt-3
+                    mt-2
 
                     px-5
                     py-4
