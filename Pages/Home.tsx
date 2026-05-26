@@ -460,7 +460,7 @@ export default function Home() {
     left-1/2
     -translate-x-1/2
 
-    sm:left-2
+    sm:left-1/2
     sm:translate-x-0
 
     z-20
