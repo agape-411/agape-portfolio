@@ -29,9 +29,9 @@ export default function About() {
 
         bg-[#F1F5F9]
 
-        py-12
-        md:py-16
-        lg:py-20
+        py-10
+        md:py-14
+        lg:py-16
       "
     >
       {/* HERO → ABOUT TRANSITION */}
@@ -42,9 +42,9 @@ export default function About() {
           left-0
           right-0
 
-          h-28
+          h-24
 
-          bg-gradient-to-b
+          bg-linear-to-b
           from-transparent
           via-[#EEF7F7]
           to-[#F1F5F9]
@@ -63,8 +63,8 @@ export default function About() {
             -top-24
             -left-24
 
-            w-[500px]
-            h-[500px]
+            w-125
+            h-125
 
             rounded-full
 
@@ -81,8 +81,8 @@ export default function About() {
             bottom-[-120px]
             right-[-120px]
 
-            w-[600px]
-            h-[600px]
+            w-150
+            h-150
 
             rounded-full
 
@@ -103,8 +103,8 @@ export default function About() {
             -translate-x-1/2
             -translate-y-1/2
 
-            w-[700px]
-            h-[700px]
+            w-175
+            h-175
 
             rounded-full
 
@@ -150,7 +150,7 @@ export default function About() {
 
               shadow-sm
 
-              mb-5
+              mb-4
             "
           >
             <span
@@ -168,11 +168,11 @@ export default function About() {
           {/* TITLE */}
           <h2
             className="
-              text-4xl
-              sm:text-5xl
-              lg:text-[3.75rem]
+              text-3xl
+              sm:text-4xl
+              lg:text-[3.5rem]
 
-              font-black
+              font-bold
               leading-[0.95]
               tracking-tight
 
@@ -195,8 +195,8 @@ export default function About() {
             grid
             lg:grid-cols-2
 
-            gap-8
-            lg:gap-12
+            gap-6
+            lg:gap-9
 
             items-start
           "
@@ -220,7 +220,7 @@ export default function About() {
           >
             <p
               className="
-              max-w-[580px]
+              max-w-145
               mx-auto
               lg:mx-0
 
@@ -263,7 +263,7 @@ export default function About() {
                     relative
                     overflow-hidden
 
-                    rounded-[32px]
+                    rounded-4xl
 
                     border
                     border-white/60
@@ -271,7 +271,7 @@ export default function About() {
                     bg-white/80
                     backdrop-blur-xl
 
-                    p-6 lg:p-7
+                    p-5 lg:p-6
 
                     shadow-[0_10px_40px_rgba(15,23,42,0.06)]
 
@@ -318,7 +318,7 @@ export default function About() {
 
                       rounded-2xl
 
-                      bg-gradient-to-br
+                      bg-linear-to-br
                       from-[#14B8A6]
                       to-[#0F766E]
 
@@ -340,7 +340,7 @@ export default function About() {
                       relative
                       z-10
 
-                      mt-5
+                      mt-3
 
                       text-center
                     "

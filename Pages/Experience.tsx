@@ -34,15 +34,15 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative overflow-hidden bg-white py-11 md:py-15"
+      className="relative overflow-hidden bg-white py-9 md:py-11"
     >
 
       {/* BACKGROUND LIGHTING */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <div className="absolute top-0 right-0 w-[350px] h-[350px] bg-cyan-100 blur-[120px] rounded-full opacity-70" />
+        <div className="absolute top-0 right-0 w-87.5 h-[350px]87.5 bg-cyan-100 blur-[120px] rounded-full opacity-70" />
 
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-emerald-100 blur-[100px] rounded-full opacity-60" />
+        <div className="absolute bottom-0 left-0 w-75 h-75 bg-emerald-100 blur-[100px] rounded-full opacity-60" />
 
       </div>
 
@@ -54,16 +54,16 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-10"
+          className="text-center mb-7"
         >
 
-          <div className="inline-flex items-center px-5  rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-6">
+          <div className="inline-flex items-center px-5  rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-4">
             <span className="text-sm font-medium tracking-[0.2em] text-[#0B7C82]">
               WORK EXPERIENCE
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#052B2F]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#052B2F]">
           Development Experience          </h2>
 
         </motion.div>
@@ -72,7 +72,7 @@ export default function Experience() {
         <div className="relative">
 
           {/* LINE */}
-          <div className="absolute left-5 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#11A3A2] to-transparent" />
+          <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-linear-to-b from-[#11A3A2] to-transparent" />
 
           <div className="space-y-4">
 
@@ -83,7 +83,7 @@ export default function Experience() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.12, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="relative flex gap-6"
+                className="relative flex gap-4"
               >
 
                 {/* ICON */}

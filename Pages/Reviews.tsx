@@ -94,12 +94,12 @@ function ReviewCard({
         group
         relative
         h-full
-        min-h-[420px]
+        min-h-105
         rounded-[30px]
         border border-white/15
         bg-white/12
         backdrop-blur-2xl
-        p-5 sm:p-6
+        p-3 sm:p-4
         shadow-[0_20px_60px_rgba(0,0,0,0.12)]
         hover:-translate-y-1
         transition-all duration-500
@@ -111,9 +111,9 @@ function ReviewCard({
       <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* TOP ROW */}
-      <div className="flex items-start justify-between gap-4 mb-8 relative z-10">
+      <div className="flex items-start justify-between gap-3 mb-6 relative z-10">
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
 
           <div className="flex gap-1">
             {Array.from({
@@ -189,7 +189,7 @@ function ReviewCard({
         </p>
 
         {!expanded && (
-          <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-[#6fe4d6]/40 to-transparent pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-full h-10 bg-linear-to-t from-[#6fe4d6]/40 to-transparent pointer-events-none" />
         )}
 
       </div>
@@ -206,7 +206,7 @@ function ReviewCard({
           text-[#05363B]
           hover:text-white
           transition-colors
-          mb-5
+          mb-3
         "
       >
         {expanded ? "Show Less" : "Read Full Review"}
@@ -269,18 +269,18 @@ export default function Reviews() {
       className="
         relative
         overflow-hidden
-        py-10
-        sm:py-14
-        lg:py-14
+        py-8
+        sm:py-12
+        lg:py-12
         bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_45%,#9EFFF2_100%)]
       "
     >
       {/* BACKGROUND LIGHTING */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-        <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-cyan-200/20 blur-[140px] rounded-full" />
+        <div className="absolute top-0 left-0 w-112.5 h-112.5 bg-cyan-200/20 blur-[140px] rounded-full" />
 
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-white/10 blur-[120px] rounded-full" />
+        <div className="absolute bottom-0 right-0 w-100 h-100 bg-white/10 blur-[120px] rounded-full" />
 
       </div>
 
@@ -318,7 +318,7 @@ export default function Reviews() {
               text-[2.2rem]
               sm:text-4xl
               lg:text-[3.5rem]
-              font-black
+              font-bold
               tracking-tight
               text-[#052B2F]
             "
@@ -328,7 +328,7 @@ export default function Reviews() {
 
           <p
             className="
-              mt-4
+              mt-3
               text-base
               sm:text-lg
               lg:text-xl
@@ -351,7 +351,7 @@ export default function Reviews() {
             grid-cols-2
             lg:grid-cols-4
             gap-4
-            mb-8
+            mb-6
           "
         >
           {[
@@ -438,7 +438,7 @@ export default function Reviews() {
             flex-wrap
             items-center
             justify-center
-            gap-5
+            gap-4
             opacity-80
           "
         >

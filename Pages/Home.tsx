@@ -31,8 +31,8 @@ export default function Home() {
       -top-40
       left-1/4
 
-      w-[600px]
-      h-[600px]
+      w-150
+      h-150
 
       rounded-full
 
@@ -137,7 +137,7 @@ export default function Home() {
         className="
           relative z-10
           max-w-7xl mx-auto
-          px-6 md:px-10
+          px-7 md:px-10
           pt-[90px]
           md:pt-[95px]
           pb-10
@@ -147,7 +147,7 @@ export default function Home() {
           className="
             grid
             lg:grid-cols-2
-            gap-10 lg:gap-13
+            gap-8 lg:gap-11
             items-center
           "
         >
@@ -181,7 +181,7 @@ export default function Home() {
 
                 shadow-sm
 
-                mb-5
+                mb-4
               "
             >
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -203,8 +203,8 @@ export default function Home() {
             <h1
               className="
                 text-3xl
-                sm:text-4xl
-                md:text-5xl
+                sm:text-5xl
+                md:text-6xl
                 lg:text-[4rem]
                 xl:text-[4.4rem]
 
@@ -381,7 +381,7 @@ export default function Home() {
     -translate-y-1/2
 
     w-[320px]
-    h-[320px]
+    h-80
 
     rounded-full
 
@@ -438,7 +438,7 @@ export default function Home() {
                 />
 
                 {/* OVERLAY */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0F766E]/10 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#0F766E]/10 via-transparent to-transparent" />
 
                 {/* DOTS */}
                 <div className="absolute bottom-8 right-8 grid grid-cols-4 gap-2">
@@ -461,7 +461,7 @@ export default function Home() {
     -translate-x-1/2
 
     sm:left-1/2
-    sm:translate-x-0
+    sm:translate-x-1/2
 
     z-20
 

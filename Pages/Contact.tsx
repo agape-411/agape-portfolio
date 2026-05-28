@@ -39,13 +39,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_45%,#9EFFF2_100%)] py-10 sm:py-10 lg:py-14"
+      className="relative overflow-hidden bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_45%,#9EFFF2_100%)] py-8 sm:py-8 lg:py-10"
     >
 
       {/* SECTION TITLE */}
       <div className="relative z-10 px-4 sm:px-6">
 
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1] tracking-tight text-white text-center mb-6 sm:mb-8">
+        <h2 className="text-xl sm:text-5xl lg:text-6xl font-bold leading-none tracking-tight text-white text-center mb-4 sm:mb-6">
           Connect
         </h2>
 
@@ -54,9 +54,9 @@ export default function Contact() {
       {/* BACKGROUND LIGHTING */}
       <div className="absolute inset-0 overflow-hidden">
 
-        <div className="absolute top-0 left-0 w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] bg-cyan-200/20 blur-[120px] sm:blur-[140px] rounded-full" />
+        <div className="absolute top-0 left-0 w-75 sm:w-112.5 h-112.5 sm:h-112.5 bg-cyan-200/20 blur-[120px] sm:blur-[140px] rounded-full" />
 
-        <div className="absolute bottom-0 right-0 w-[240px] sm:w-[350px] h-[240px] sm:h-[350px] bg-white/10 blur-[100px] sm:blur-[120px] rounded-full" />
+        <div className="absolute bottom-0 right-0 w-60 sm:w-87.5 h-60 sm:h-87.5 bg-white/10 blur-[100px] sm:blur-[120px] rounded-full" />
 
       </div>
 
@@ -76,11 +76,11 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2">
 
             {/* LEFT PANEL */}
-            <div className="relative p-8
-lg:p-10">
+            <div className="relative p-6
+lg:p-8">
 
               {/* INNER GLOW */}
-              <div className="absolute top-0 left-0 w-[180px] sm:w-[250px] h-[180px] sm:h-[250px] bg-white/10 blur-[80px] sm:blur-[100px] rounded-full" />
+              <div className="absolute top-0 left-0 w-45 sm:w-62.5 h-45 sm:h-62.5 bg-white/10 blur-[80px] sm:blur-[100px] rounded-full" />
 
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
@@ -91,9 +91,9 @@ lg:p-10">
               >
 
                 {/* HEADING */}
-                <h2 className="text-4xl
-sm:text-5xl
-lg:text-[3.8rem] font-black leading-[0.95] tracking-tight text-[#052B2F]">
+                <h2 className="text-3xl
+sm:text-4xl
+lg:text-[3.5rem] font-bold leading-[0.95] tracking-tight text-[#052B2F]">
 
                   Let’s Build
 
@@ -104,7 +104,7 @@ lg:text-[3.8rem] font-black leading-[0.95] tracking-tight text-[#052B2F]">
                 </h2>
 
                 {/* DESCRIPTION */}
-                <p className="mt-4 sm:mt-6 text-[15px] sm:text-lg md:text-xl leading-relaxed text-black max-w-xl mx-auto lg:mx-0">
+                <p className="mt-3 sm:mt-4 text-[15px] sm:text-lg md:text-xl leading-relaxed text-black max-w-xl mx-auto lg:mx-0">
 
                   Have a project in mind or looking for a frontend developer
                   to bring your ideas to life? Let’s connect and create
@@ -113,7 +113,7 @@ lg:text-[3.8rem] font-black leading-[0.95] tracking-tight text-[#052B2F]">
                 </p>
 
                 {/* CONTACT INFO */}
-                <div className="mt-5 sm:mt-7 space-y-2 sm:space-y-3">
+                <div className="mt-4 sm:mt-5 space-y-2 sm:space-y-3">
 
                   {contactInfo.map(({ icon: Icon, label, value }) => (
                     <div
@@ -152,7 +152,7 @@ lg:text-[3.8rem] font-black leading-[0.95] tracking-tight text-[#052B2F]">
                           {label}
                         </p>
 
-                        <h4 className="text-sm sm:text-lg font-semibold text-[#052B2F] break-words">
+                        <h4 className="text-sm sm:text-lg font-semibold text-[#052B2F] wrap-break-word">
                           {value}
                         </h4>
 
@@ -176,7 +176,7 @@ lg:text-[3.8rem] font-black leading-[0.95] tracking-tight text-[#052B2F]">
                 bg-white/15
                 backdrop-blur-2xl
                 lg:border-l border-white/10
-                p-3 sm:p-10 lg:p-9
+                p-3 sm:p-8 lg:p-8
               "
             >
 

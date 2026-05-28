@@ -38,7 +38,7 @@ export default function Header() {
         left-0
         right-0
         z-50
-        pt-4
+        pt-3
       "
     >
       <div className="max-w-6xl mx-auto px-3 sm:px-5 md:px-7">
@@ -118,7 +118,7 @@ export default function Header() {
               lg:flex
               items-center
               gap-6
-xl:gap-7
+              xl:gap-7 mb-1
             "
           >
             {navLinks.map((link, index) => (

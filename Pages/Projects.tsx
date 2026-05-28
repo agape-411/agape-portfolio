@@ -42,9 +42,9 @@ export default function Projects() {
     >
       {/* BACKGROUND LIGHTING */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-[450px] h-[450px] bg-cyan-200/20 blur-[140px] rounded-full" />
+        <div className="absolute top-0 left-0 w-112.5 h-112.5 bg-cyan-200/20 blur-[140px] rounded-full" />
 
-        <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-white/10 blur-[120px] rounded-full" />
+        <div className="absolute bottom-0 right-0 w-87.5 h-87.5 bg-white/10 blur-[120px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
@@ -54,15 +54,15 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-10 md:mb-14"
+          className="text-center mb-8 md:mb-10"
         >
-          <div className="inline-flex items-center px-5 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-xl mb-3">
+          <div className="inline-flex items-center px-5 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-xl mb-2">
             <span className="text-xs sm:text-sm tracking-[0.2em] text-white/90">
               SELECTED WORK
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-[#052B2F]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-[#052B2F]">
             Featured Projects
           </h2>
 
@@ -74,7 +74,7 @@ export default function Projects() {
         </motion.div>
 
         {/* PROJECT GRID */}
-        <div className="grid lg:grid-cols-2 gap-6 xl:gap-8">
+        <div className="grid lg:grid-cols-2 gap-5 xl:gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -85,7 +85,7 @@ export default function Projects() {
               className="
                 group
                 overflow-hidden
-                rounded-[32px]
+                rounded-4xl
                 bg-white/15
                 backdrop-blur-2xl
                 border border-white/20
@@ -100,11 +100,11 @@ export default function Projects() {
   className="
     relative
     w-full
-    h-[240px]
-    sm:h-[280px]
-    md:h-[320px]
-    lg:h-[340px]
-    xl:h-[380px]
+    h-60
+    sm:h-70
+    md:h-80
+    lg:h-85
+    xl:h-95
     overflow-hidden
     bg-[#071E22]
     flex
@@ -130,12 +130,12 @@ export default function Projects() {
   />
 
   {/* IMAGE OVERLAY */}
-  <div className="absolute inset-0 bg-gradient-to-t from-[#052B2F]/40 via-transparent to-transparent pointer-events-none" />
+  <div className="absolute inset-0 bg-linear-to-t from-[#052B2F]/40 via-transparent to-transparent pointer-events-none" />
 </div>
               {/* CONTENT */}
               <div className="p-5 sm:p-6 lg:p-7">
-                <div className="flex items-start justify-between gap-4 mb-5">
-                  <h3 className="text-2xl sm:text-3xl lg:text-[2rem] font-black tracking-tight text-[#052B2F] leading-tight">
+                <div className="flex items-start justify-between gap-3 mb-3">
+                  <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-semibold tracking-tight text-[#052B2F] leading-tight">
                     {project.title}
                   </h3>
 
@@ -145,7 +145,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="
                       shrink-0
-                      w-12 h-12
+                      w-10 h-10
                       rounded-2xl
                       bg-[#052B2F]
                       text-white
@@ -154,11 +154,11 @@ export default function Projects() {
                       transition-all duration-300
                     "
                   >
-                    <ArrowUpRight className="w-5 h-5" />
+                    <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </div>
 
-                <p className="text-base sm:text-lg leading-relaxed text-[#052B2F] mb-6">
+                <p className="text-base sm:text-lg leading-relaxed text-[#052B2F] mb-4">
                   {project.desc}
                 </p>
 

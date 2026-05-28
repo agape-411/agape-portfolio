@@ -50,15 +50,15 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden bg-white py-14 md:py-19"
+      className="relative overflow-hidden bg-white py-10 md:py-15"
     >
 
       {/* LIGHTING */}
       <div className="absolute inset-0 overflow-hidden">
 
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-cyan-100 blur-[140px] rounded-full opacity-70" />
+        <div className="absolute top-0 right-0 w-100 h-100 bg-cyan-100 blur-[140px] rounded-full opacity-70" />
 
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-emerald-100 blur-[120px] rounded-full opacity-60" />
+        <div className="absolute bottom-0 left-0 w-75 h-75 bg-emerald-100 blur-[120px] rounded-full opacity-60" />
 
       </div>
 
@@ -73,13 +73,13 @@ export default function Skills() {
           className="text-center mb-8"
         >
 
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-3">
+          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-2">
             <span className="text-sm font-medium tracking-[0.2em] text-[#0B7C82]">
               TECH STACK
             </span>
           </div>
 
-          <h2 className="ttext-4xl sm:text-5xl lg:text-[3.8rem] font-black tracking-tight text-[#052B2F]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[3.5rem] font-bold tracking-tight text-[#052B2F]">
             Skills & Technologies
           </h2>
 
@@ -106,10 +106,10 @@ export default function Skills() {
                 className="
                   relative
                   overflow-hidden
-                  rounded-[32px]
+                  rounded-4xl
                   border border-black/5
                   bg-[#F8FAFA]
-                  p-6
+                  p-4
                   shadow-[0_15px_50px_rgba(0,0,0,0.05)]
                   hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]
                   transition-all duration-500
@@ -118,28 +118,28 @@ export default function Skills() {
 
                 {/* ICON */}
                 <div className="
-                  w-16 h-16
+                  w-15 h-15
                   rounded-2xl
                   bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_100%)]
                   flex items-center justify-center
                   shadow-lg
                  mx-auto">
-                  <Icon className="w-7 h-7 text-white items-center" />
+                  <Icon className="w-6 h-6 text-white items-center" />
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-4 text-2xl font-bold text-[#052B2F] text-center">
+                <h3 className="mt-4 text-2xl font-semibold text-[#052B2F] text-center">
                   {cat.title}
                 </h3>
 
                 {/* SKILLS */}
-                <div className="mt-3 flex flex-wrap gap-6 justify-center">
+                <div className="mt-3 flex flex-wrap gap-4 justify-center">
 
                   {cat.skills.map((skill) => (
                     <span
                       key={skill}
                       className="
-                        px-4 py-2
+                        px-3 py-2
                         rounded-full
                         bg-white
                         border border-black/5
