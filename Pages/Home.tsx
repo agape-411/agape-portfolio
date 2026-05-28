@@ -47,12 +47,12 @@ export default function Home() {
       absolute
 
       top-[42%]
-      right-[-220px]
+      -right-55
 
       -translate-y-1/2
 
-      w-[1200px]
-      h-[1200px]
+      w-300
+      h-300
 
       rounded-full
 
@@ -68,10 +68,10 @@ export default function Home() {
       absolute
 
       top-[38%]
-      right-[20px]
+      right-5
 
-      w-[700px]
-      h-[700px]
+      w-175
+      h-175
 
       rounded-full
 
@@ -87,10 +87,10 @@ export default function Home() {
       absolute
 
       top-[48%]
-      right-[120px]
+      right-30
 
-      w-[420px]
-      h-[420px]
+      w-105
+      h-105
 
       rounded-full
 
@@ -105,11 +105,11 @@ export default function Home() {
     className="
       absolute
 
-      bottom-[-250px]
+      -bottom-62.5
       left-1/3
 
-      w-[700px]
-      h-[700px]
+      w-75
+      h-75
 
       rounded-full
 
@@ -138,8 +138,8 @@ export default function Home() {
           relative z-10
           max-w-7xl mx-auto
           px-7 md:px-10
-          pt-[90px]
-          md:pt-[95px]
+          pt-22.5
+          md:pt-23.75
           pb-10
         "
       >
@@ -202,13 +202,13 @@ export default function Home() {
             {/* TITLE */}
             <h1
               className="
-                text-3xl
+                text-4xl
                 sm:text-5xl
                 md:text-6xl
                 lg:text-[4rem]
-                xl:text-[4.4rem]
+                xl:text-[4.8rem]
 
-                font-black
+                font-bold
                 leading-[0.92]
                 tracking-[-0.04em]
 
@@ -229,7 +229,7 @@ export default function Home() {
             {/* DESCRIPTION */}
             <p
               className="
-                mt-5
+                mt-4
 
                 max-w-2xl
                 mx-auto lg:mx-0
@@ -240,7 +240,7 @@ export default function Home() {
 
                 leading-relaxed
 
-                text-slate-600
+                text-black
               "
             >
               Frontend developer crafting premium modern websites
@@ -252,7 +252,7 @@ export default function Home() {
             {/* BUTTONS */}
             <div
               className="
-                mt-5
+                mt-3
                 sm:mt-9
 
                 flex
@@ -350,12 +350,12 @@ export default function Home() {
                 relative
 
                 w-full
-                max-w-[420px]
+                max-w-105
 
-               h-[320px]
-               sm:h-[400px]
-               lg:h-[460px]
-               xl:h-[480px]
+               h-80
+               sm:h-100
+               lg:h-115
+               xl:h-120
               "
             >
               {/* TEAL ATMOSPHERIC GLOW */}
@@ -376,7 +376,7 @@ export default function Home() {
     absolute
 
     top-1/2
-    right-[-20px]
+    -right-5
 
     -translate-y-1/2
 
@@ -404,7 +404,7 @@ export default function Home() {
                   bg-white/20
                   backdrop-blur-xl
 
-                  rotate-[2deg]
+                  rotate-2
                 "
               />
 
@@ -457,11 +457,9 @@ export default function Home() {
     absolute
     bottom-3
 
-    left-1/2
-    -translate-x-1/2
-
-    sm:left-1/2
-    sm:translate-x-1/2
+    left-2
+    sm:left-3
+    lg:left-3
 
     z-20
 

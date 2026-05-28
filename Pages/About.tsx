@@ -30,8 +30,8 @@ export default function About() {
         bg-[#F1F5F9]
 
         py-10
-        md:py-14
-        lg:py-16
+        md:py-12
+        lg:py-14
       "
     >
       {/* HERO → ABOUT TRANSITION */}
@@ -42,7 +42,7 @@ export default function About() {
           left-0
           right-0
 
-          h-24
+          h-23
 
           bg-linear-to-b
           from-transparent
@@ -78,8 +78,8 @@ export default function About() {
         <div
           className="
             absolute
-            bottom-[-120px]
-            right-[-120px]
+            -bottom-30
+            -right-30
 
             w-150
             h-150
@@ -127,8 +127,8 @@ export default function About() {
             text-center
             max-w-4xl
             mx-auto
-            mb-12
-            lg:mb-16
+            mb-10
+            lg:mb-12
           "
         >
           {/* BADGE */}
@@ -150,7 +150,8 @@ export default function About() {
 
               shadow-sm
 
-              mb-4
+              mb-3
+              mt-2
             "
           >
             <span
@@ -179,13 +180,13 @@ export default function About() {
               text-slate-900
             "
           >
-            Passionate About
+            I build Modern
 
             <span className="block text-[#14B8A6] mt-2">
-              Building Modern
+              Web Experiences
             </span>
 
-            Web Experiences
+            
           </h2>
         </motion.div>
 
@@ -195,8 +196,8 @@ export default function About() {
             grid
             lg:grid-cols-2
 
-            gap-6
-            lg:gap-9
+            gap-5
+            lg:gap-7
 
             items-start
           "

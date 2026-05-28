@@ -50,7 +50,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden bg-white py-10 md:py-15"
+      className="relative overflow-hidden bg-white py-9 md:py-13"
     >
 
       {/* LIGHTING */}
@@ -70,7 +70,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-8"
+          className="text-center mb-6"
         >
 
           <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-2">
@@ -118,22 +118,22 @@ export default function Skills() {
 
                 {/* ICON */}
                 <div className="
-                  w-15 h-15
+                  w-14 h-14
                   rounded-2xl
                   bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_100%)]
                   flex items-center justify-center
                   shadow-lg
-                 mx-auto">
+                  mx-auto">
                   <Icon className="w-6 h-6 text-white items-center" />
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-4 text-2xl font-semibold text-[#052B2F] text-center">
+                <h3 className="mt-3 text-2xl font-semibold text-[#052B2F] text-center">
                   {cat.title}
                 </h3>
 
                 {/* SKILLS */}
-                <div className="mt-3 flex flex-wrap gap-4 justify-center">
+                <div className="mt-3 flex flex-wrap gap-3 justify-center">
 
                   {cat.skills.map((skill) => (
                     <span

@@ -45,7 +45,7 @@ export default function Contact() {
       {/* SECTION TITLE */}
       <div className="relative z-10 px-4 sm:px-6">
 
-        <h2 className="text-xl sm:text-5xl lg:text-6xl font-bold leading-none tracking-tight text-white text-center mb-4 sm:mb-6">
+        <h2 className="text-3xl sm:text-4xl lg:text-[3.5rem] font-bold leading-none tracking-tight text-white text-center mb-3 sm:mb-5">
           Connect
         </h2>
 
@@ -76,8 +76,8 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2">
 
             {/* LEFT PANEL */}
-            <div className="relative p-6
-lg:p-8">
+            <div className="relative p-5
+lg:p-6">
 
               {/* INNER GLOW */}
               <div className="absolute top-0 left-0 w-45 sm:w-62.5 h-45 sm:h-62.5 bg-white/10 blur-[80px] sm:blur-[100px] rounded-full" />
@@ -91,9 +91,9 @@ lg:p-8">
               >
 
                 {/* HEADING */}
-                <h2 className="text-3xl
-sm:text-4xl
-lg:text-[3.5rem] font-bold leading-[0.95] tracking-tight text-[#052B2F]">
+                <h2 className="text-2xl
+sm:text-3xl
+lg:text-[3.5rem] font-semibold leading-[0.95] tracking-tight text-[#052B2F]">
 
                   Let’s Build
 

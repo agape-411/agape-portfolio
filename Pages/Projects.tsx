@@ -38,7 +38,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_45%,#9EFFF2_100%)] py-14 md:py-18"
+      className="relative overflow-hidden bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_45%,#9EFFF2_100%)] py-12 md:py-16"
     >
       {/* BACKGROUND LIGHTING */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -62,11 +62,11 @@ export default function Projects() {
             </span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-[#052B2F]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#052B2F]">
             Featured Projects
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-3 text-base sm:text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
              A collection of real-world digital experiences focused on
             modern UI, responsiveness, scalability, and premium frontend
             engineering.
@@ -74,7 +74,7 @@ export default function Projects() {
         </motion.div>
 
         {/* PROJECT GRID */}
-        <div className="grid lg:grid-cols-2 gap-5 xl:gap-6">
+        <div className="grid lg:grid-cols-2 gap-4 xl:gap-5">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
@@ -133,9 +133,9 @@ export default function Projects() {
   <div className="absolute inset-0 bg-linear-to-t from-[#052B2F]/40 via-transparent to-transparent pointer-events-none" />
 </div>
               {/* CONTENT */}
-              <div className="p-5 sm:p-6 lg:p-7">
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="text-xl sm:text-2xl lg:text-[2rem] font-semibold tracking-tight text-[#052B2F] leading-tight">
+              <div className="p-4 sm:p-5 lg:p-6">
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <h3 className="text-xl sm:text-2xl lg:text-[1.8rem] font-semibold tracking-tight text-[#052B2F] leading-tight">
                     {project.title}
                   </h3>
 
@@ -145,7 +145,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="
                       shrink-0
-                      w-10 h-10
+                      w-9 h-9
                       rounded-2xl
                       bg-[#052B2F]
                       text-white
@@ -158,7 +158,7 @@ export default function Projects() {
                   </a>
                 </div>
 
-                <p className="text-base sm:text-lg leading-relaxed text-[#052B2F] mb-4">
+                <p className="text-base sm:text-lg leading-relaxed text-[#052B2F] mb-3">
                   {project.desc}
                 </p>
 

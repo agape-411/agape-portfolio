@@ -54,16 +54,16 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-7"
+          className="text-center mb-6"
         >
 
-          <div className="inline-flex items-center px-5  rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-4">
+          <div className="inline-flex items-center px-5  rounded-full bg-[#DFFFF8] border border-[#A7F3E8] mb-3">
             <span className="text-sm font-medium tracking-[0.2em] text-[#0B7C82]">
               WORK EXPERIENCE
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-[#052B2F]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#052B2F]">
           Development Experience          </h2>
 
         </motion.div>
@@ -83,7 +83,7 @@ export default function Experience() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.12, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="relative flex gap-4"
+                className="relative flex gap-3"
               >
 
                 {/* ICON */}
@@ -105,21 +105,21 @@ export default function Experience() {
                   rounded-[30px]
                   border border-black/5
                   bg-[#F8FAFA]
-                  p-6 lg:p-7
+                  p-5 lg:p-6
                   shadow-[0_10px_40px_rgba(0,0,0,0.05)]
                   hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
                   transition-all duration-500
                 ">
 
                   {/* TOP */}
-                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 mb-3">
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 mb-2">
 
                     <div>
-                      <h3 className="text-xl lg:text-[1.35rem] font-bold text-[#052B2F]">
+                      <h3 className="text-xl lg:text-[1.35rem] font-semibold text-[#052B2F]">
                         {exp.role}
                       </h3>
 
-                      <div className="flex items-center gap-3 mt-2">
+                      <div className="flex items-center gap-2 mt-2">
 
                         <div className="relative w-8 h-8 rounded-full overflow-hidden bg-white border border-black/5">
 
@@ -156,7 +156,7 @@ export default function Experience() {
                   </div>
 
                   {/* DESCRIPTION */}
-                  <p className="text-base lg:text-[17px] leading-relaxed text-[#556466]">
+                  <p className="text-base lg:text-[17px] leading-relaxed text-[#4d5a5c]">
                     {exp.desc}
                   </p>
 

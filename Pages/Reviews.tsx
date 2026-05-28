@@ -111,7 +111,7 @@ function ReviewCard({
       <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* TOP ROW */}
-      <div className="flex items-start justify-between gap-3 mb-6 relative z-10">
+      <div className="flex items-start justify-between gap-3 mb-4 relative z-10">
 
         <div className="flex flex-col gap-3">
 
@@ -142,8 +142,8 @@ function ReviewCard({
             <Image
               src={review.logo}
               alt={review.platform}
-              width={28}
-              height={28}
+              width={30}
+              height={30}
               className="object-contain shrink-0"
             />
 
@@ -172,7 +172,7 @@ function ReviewCard({
       </div>
 
       {/* REVIEW TEXT */}
-      <div className="relative mb-6">
+      <div className="relative mb-4">
 
         <p
           className={`
@@ -269,9 +269,9 @@ export default function Reviews() {
       className="
         relative
         overflow-hidden
-        py-8
-        sm:py-12
-        lg:py-12
+        py-7
+        sm:py-10
+        lg:py-9
         bg-[linear-gradient(135deg,#0A7B80_0%,#16A6A3_45%,#9EFFF2_100%)]
       "
     >
@@ -292,7 +292,7 @@ export default function Reviews() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-center mb-8 sm:mb-9"
+          className="text-center mb-6 sm:mb-8"
         >
 
           <div
@@ -305,7 +305,7 @@ export default function Reviews() {
               border border-white/20
               bg-white/10
               backdrop-blur-xl
-              mb-3
+              mb-2
             "
           >
             <span className="text-xs sm:text-sm tracking-[0.2em] text-white/90">
@@ -328,7 +328,7 @@ export default function Reviews() {
 
           <p
             className="
-              mt-3
+              mt-2
               text-base
               sm:text-lg
               lg:text-xl
@@ -350,8 +350,8 @@ export default function Reviews() {
             grid
             grid-cols-2
             lg:grid-cols-4
-            gap-4
-            mb-6
+            gap-3
+            mb-4
           "
         >
           {[
@@ -380,11 +380,11 @@ export default function Reviews() {
                 bg-white/10
                 backdrop-blur-2xl
                 px-5
-                py-4
+                py-3
                 text-center
               "
             >
-              <h3 className="text-3xl sm:text-4xl font-black text-white">
+              <h3 className="text-3xl sm:text-4xl font-medium text-white">
                 {item.value}
               </h3>
 
@@ -433,7 +433,7 @@ export default function Reviews() {
         {/* PLATFORM STRIP */}
         <div
           className="
-            mt-4
+            mt-3
             flex
             flex-wrap
             items-center
@@ -463,7 +463,7 @@ export default function Reviews() {
                 items-center
                 gap-3
                 px-5
-                py-3
+                py-2
                 rounded-2xl
                 border border-white/15
                 bg-white/10
@@ -472,15 +472,15 @@ export default function Reviews() {
             >
               <div className="relative w-5 h-5">
                 <Image
-  src={platform.logo}
-  alt={platform.name}
-  width={34}
-  height={34}
+                src={platform.logo}
+                alt={platform.name}
+                width={34}
+                height={34}
   className="object-contain shrink-0"
 />
               </div>
 
-              <span className="text-sm font-medium text-white">
+              <span className="text-sm font-medium text-black/80">
                 {platform.name}
               </span>
             </div>
