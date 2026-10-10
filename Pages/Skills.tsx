@@ -85,7 +85,7 @@ export default function Skills() {
 
           <p className="mt-2 text-lg md:text-xl text-[#556466] max-w-3xl mx-auto leading-relaxed">
             Modern technologies and tools focused on building scalable,
-            high-performance digital products.
+            high performance digital products.
           </p>
 
         </motion.div>

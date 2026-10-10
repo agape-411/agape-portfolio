@@ -7,15 +7,15 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     title: "Garvey Labs",
-    desc: "Modern corporate website engineered with premium UI/UX, responsive layouts, smooth animations, and scalable frontend architecture tailored for a technology-focused brand.",
-    tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+    desc: "Modern corporate website engineered with premium UI/UX, responsive layouts, smooth animations, and scalable frontend architecture tailored for a technology focused and consultancy brand.",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "Sanity" ],
     image: "/images/p1.png",
     link: "https://www.garveylabs.com/",
   },
   {
     title: "Lascenti",
-    desc: "High-performance digital platform designed for a modern startup with clean visual hierarchy, responsive user flows, and polished frontend interactions.",
-    tags: ["React", "Next.js", "UI/UX", "Responsive Design"],
+    desc: "High performance digital Ecommerce platform designed for a modern startup with clean visual hierarchy, responsive user flows, and polished frontend interactions.",
+    tags: ["React", "Next.js", "UI/UX", "WordPress", "Responsive Design"],
     image: "/images/p4.png",
     link: "https://www.lascenti.co",
   },
@@ -67,8 +67,8 @@ export default function Projects() {
           </h2>
 
           <p className="mt-3 text-base sm:text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
-             A collection of real-world digital experiences focused on
-            modern UI, responsiveness, scalability, and premium frontend
+             A collection of modern live digital experiences focused on
+            modern UI, responsiveness, scalability, and premium software
             engineering.
           </p>
         </motion.div>

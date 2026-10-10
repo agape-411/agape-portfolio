@@ -138,8 +138,8 @@ export default function Home() {
                 tracking-[-0.04em] text-[#0F172A]
                 sm:text-5xl
                 md:text-6xl
-                lg:text-[4rem]
-                xl:text-[4.8rem]
+                lg:text-[3.5rem]
+                xl:text-[4rem]
               "
             >
               Building
@@ -160,7 +160,7 @@ export default function Home() {
                 xl:mx-0
               "
             >
-              Frontend developer crafting premium modern websites
+              Web developer crafting premium modern websites
               with high performance architecture, clean UI systems,
               smooth animations, and scalable user experiences
               for brands, startups, and businesses.
@@ -223,12 +223,12 @@ export default function Home() {
             {/* IMAGE WRAPPER */}
             <div
               className="
-                relative h-64 w-full max-w-[420px]
-                sm:h-80
-                md:h-[340px]
-                lg:h-[360px]
-                xl:h-[400px]
-                2xl:h-[460px]
+                relative h-[420px] w-full max-w-[420px]
+                sm:h-[480px]
+                md:h-[520px]
+                lg:h-[560px]
+                xl:h-[540px]
+                2xl:h-[600px]
               "
             >
               {/* TEAL ATMOSPHERIC GLOW */}
@@ -262,22 +262,17 @@ export default function Home() {
                 className="
                   absolute inset-0 overflow-hidden
                   rounded-[36px] border border-white/80
-                  bg-white/40 shadow-[0_25px_80px_rgba(0,0,0,0.12)]
+                  bg-[#0F766E]/5 shadow-[0_25px_80px_rgba(0,0,0,0.12)]
                   backdrop-blur-xl
                 "
               >
                 <Image
                   src="/images/prof.png"
-                  alt="Agape — Web Developer"
+                  alt="Agape — Frontend Developer"
                   fill
                   priority
-                  sizes="
-                    (max-width: 639px) calc(100vw - 32px),
-                    (max-width: 1279px) 420px,
-                    (max-width: 1535px) 400px,
-                    460px
-                  "
-                  className="object-cover object-center"
+                  sizes="(max-width: 639px) calc(100vw - 32px), 420px"
+                  className="object-contain object-center"
                 />
 
                 {/* IMAGE OVERLAY */}

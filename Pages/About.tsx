@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Code2,
     title: "Clean Architecture",
-    desc: "Scalable frontend systems built with maintainable structure, reusable components, and production-grade standards.",
+    desc: "Scalable websites systems built with maintainable structure, reusable components, and production-grade standards.",
   },
   {
     icon: Palette,
@@ -231,8 +231,8 @@ export default function About() {
 "
             >
               I specialize in crafting premium digital experiences with
-              modern frontend technologies, intuitive interfaces, and
-              scalable architecture designed for performance and long-term
+              modern technologies, intuitive interfaces, and
+              scalable architecture designed for performance and long term
               growth.
 
               <br />
