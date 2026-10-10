@@ -132,16 +132,16 @@ export default function Contact() {
                 className="relative z-10 text-center lg:text-left"
               >
                 {/* HEADING */}
-                <h2 className="text-2xl font-semibold leading-[0.95] tracking-tight text-[#052B2F] sm:text-3xl lg:text-[3.5rem]">
+                <h2 className="text-2xl font-semibold leading-[0.95] tracking-tight text-[#052B2F] sm:text-3xl lg:text-[3rem]">
                   Let’s Build
-                  <span className="mt-1 block text-white">
+                  <span className="mt-2 block text-white">
                     Something Great
                   </span>
                 </h2>
 
                 {/* DESCRIPTION */}
                 <p className="mx-auto mt-3 max-w-xl text-[15px] leading-relaxed text-black sm:mt-4 sm:text-lg md:text-xl lg:mx-0">
-                  Have a project in mind or looking for a frontend
+                  Have a project in mind or looking for a
                   developer to bring your ideas to life? Let’s
                   connect and create modern digital experiences
                   together.
