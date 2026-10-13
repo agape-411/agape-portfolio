@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://agape-portfolio.vercel.app/IG.png',
+        url: 'https://agape-portfolio.vercel.app/og-image.png',
         width: 1200,
         height: 630,
       },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    images: ['https://agape-portfolio.vercel.app/IG.png'],
+    images: ['https://agape-portfolio.vercel.app/og-image.png'],
   },
 }
 
