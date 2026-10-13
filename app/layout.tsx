@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     'Fullstack developer specializing in React, Next.js, modern UI systems, and high-performance web applications.',
 
   openGraph: {
-    title: 'Agape Korrok | Frontend Developer',
-    description: 'Frontend developer specializing in React and Next.js.',
+    title: 'Agape Korrok | Fullstack Developer',
+    description: 'Web developer specializing in React and Next.js.',
     url: 'https://agape-portfolio.vercel.app',
     siteName: 'Agape Portfolio',
     type: 'website',
