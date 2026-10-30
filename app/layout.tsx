@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://agape-portfolio.vercel.app'),
 
@@ -23,26 +24,40 @@ export const metadata: Metadata = {
   description:
     'Fullstack developer specializing in React, Next.js, modern UI systems, and high-performance web applications.',
 
+  alternates: {
+    canonical: 'https://agape-portfolio.vercel.app/',
+  },
+
   openGraph: {
     title: 'Agape Korrok | Fullstack Developer',
-    description: 'Web developer specializing in React and Next.js.',
-    url: 'https://agape-portfolio.vercel.app',
+    description:
+      'Web developer specializing in React, Next.js, and modern digital experiences.',
+    url: 'https://agape-portfolio.vercel.app/',
     siteName: 'Agape Portfolio',
     type: 'website',
+
     images: [
       {
-        url: 'https://agape-portfolio.vercel.app/og-image.png',
+        url: 'https://agape-portfolio.vercel.app/og-image-v2.jpg',
         width: 1200,
         height: 630,
+        type: 'image/jpeg',
+        alt: 'Agape Korrok - Web Developer',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    images: ['https://agape-portfolio.vercel.app/og-image.png'],
+    title: 'Agape Korrok | Fullstack Developer',
+    description:
+      'Web developer specializing in React and Next.js.',
+    images: [
+      'https://agape-portfolio.vercel.app/og-image-v2.jpg',
+    ],
   },
 }
+
 
 export default function RootLayout({
   children,
